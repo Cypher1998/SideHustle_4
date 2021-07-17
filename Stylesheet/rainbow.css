@@ -1,0 +1,115 @@
+/* Imported font */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* General declarations */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling the navigation bar */
+.main-nav{
+    width: 70%;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+.main-nav h3{
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    color: tomato;
+}
+
+.main-nav p{
+    display: inline-block;
+    width: calc(100% - 170px);
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-align: right;
+    font-size: 16px;
+    vertical-align: middle;
+    color: tomato;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav a:hover{
+   color: tomato;
+}
+
+/* Styling the main tag */
+.main-body{
+    text-align: center;
+    background-color: orange;
+    min-height: 92vh;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 2px 7px;
+}
+
+.main-body .background{
+    align-self: end;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.main-body .color{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+}
+
+.btn-click{
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+    letter-spacing: 0.1em;
+    border-radius: 5px;
+    border: 2px solid black;
+    align-self: start;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s linear;
+}
+
+.btn-click:hover{
+    color: white;
+    background: black;
+}
+
+/* Media query for 768px screen-size and below */
+@media (max-width:768px){
+    .main-nav{
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .main-nav h3{
+        font-size: 15px;
+    }
+
+    .main-nav p{
+        font-size: 15px;
+        width: calc(100% - 148px);
+    }
+
+    .main-body .background{
+        font-size: 30px;
+        padding: 15px 15px;
+    }
+}
